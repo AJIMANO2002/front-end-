@@ -1,0 +1,13 @@
+.container-alert{
+  background-color: black;
+}
+
+
+.alert-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    padding: 2px;
+
+  }

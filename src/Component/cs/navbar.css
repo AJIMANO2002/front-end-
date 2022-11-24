@@ -1,0 +1,56 @@
+.navbar {
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+.icon{
+  display: flex;
+  justify-content: space-between;
+  margin:0 25px 0 25px;
+  cursor: pointer;
+}
+
+#brand {
+  color: black;
+  margin-left: 35px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+  width: 60%;
+  align-items: center;
+  margin-left: 20px;
+
+}
+
+.btn {
+
+  text-decoration: none;
+
+}
+
+.form-control {
+  text-decoration: none;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+
+
+}
+
+#cart-btn {
+  font-size: 30px;
+  color: black;
+  margin-right: 20px;
+
+}
+
+#user {
+  color: black;
+  font-size: 30px;
+  border: none;
+}

@@ -1,0 +1,58 @@
+
+#product-page{
+    margin-top: 100px;
+
+}
+
+.newarrival {
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 60px;
+
+}
+
+#name{
+
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+.img1{
+    width: 100%;
+    height: 100%;
+}
+.stars {
+    height: 15px;
+    cursor: pointer;
+}
+.price{
+    color: #fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+ #Qinput{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 60px;
+}  
+ .cartbtn{
+    background: #fe980f;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 20px;
+
+}
+.buy{
+    background: green;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
