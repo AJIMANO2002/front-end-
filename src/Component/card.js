@@ -12,7 +12,7 @@ function Card() {
 
 
     useEffect(() => {
-        axios.get("http://localhost:5000/productsDetails").then((response) => {
+        axios.get("https://real-pear-gorilla-tutu.cyclic.app/productsDetails").then((response) => {
             setData(response.data);
             console.log(response.data)
         })
