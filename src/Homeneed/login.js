@@ -14,7 +14,7 @@ function Login(props) {
   const handlesubmit = async (e) => {
     e.preventDefault()
     try {
-      const url = "http://localhost:5000/login";
+      const url = "https://real-pear-gorilla-tutu.cyclic.app/login";
       const res = await axios.post(url, user);
       localStorage.setItem("auth",JSON.stringify(res));
       console.log(res)
