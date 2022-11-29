@@ -16,7 +16,7 @@ function Adminform({ data }) {
   const handlesubmit = async (e) => {
     e.preventDefault()
     try {
-      const url = "http://localhost:5000/products";
+      const url = "https://real-pear-gorilla-tutu.cyclic.app/products";
       const res = await axios.post(url, pro);
       console.log(res)
       
