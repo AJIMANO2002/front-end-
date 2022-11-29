@@ -12,7 +12,7 @@ function User() {
 
     useEffect(() => {
 
-        axios.get("http://localhost:5000/userDetails")
+        axios.get("https://real-pear-gorilla-tutu.cyclic.app/userDetails")
             .then((res) => {
                 setUser(res.data);
                 console.log(res.data)
