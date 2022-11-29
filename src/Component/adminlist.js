@@ -15,7 +15,7 @@ function Adminlist({ editdata }) {
 
    
     const [pro, setPro] = useState([])
-    axios.get("http://localhost:5000/productsDetails")
+    axios.get("https://real-pear-gorilla-tutu.cyclic.app/productsDetails")
         .then((res) => {
             setPro(res.data)
            
