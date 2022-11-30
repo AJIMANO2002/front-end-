@@ -12,7 +12,7 @@ function User() {
 
     useEffect(() => {
 
-        axios.get("https://real-pear-gorilla-tutu.cyclic.app/userDetails")
+        axios.get("https://trendzone-backend.onrender.com/userDetails")
             .then((res) => {
                 setUser(res.data);
                 console.log(res.data)
