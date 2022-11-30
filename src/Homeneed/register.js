@@ -15,7 +15,7 @@ function Register() {
   const handlesubmit = async (e) => {
     e.preventDefault()
     try {
-      const url = "https://real-pear-gorilla-tutu.cyclic.app/register";
+      const url = "https://trendzone-backend.onrender.com/register";
       const res = await axios.post(url, user);
       console.log(res);
       navigate("/login")
