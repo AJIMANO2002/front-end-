@@ -15,7 +15,7 @@ function Adminlist({ editdata }) {
 
    
     const [pro, setPro] = useState([])
-    axios.get("https://real-pear-gorilla-tutu.cyclic.app/productsDetails")
+    axios.get("https://trendzone-backend.onrender.com/productsDetails")
         .then((res) => {
             setPro(res.data)
            
