@@ -6,7 +6,7 @@ import Adminform from "../Component/adminform";
 
 
 function Admin() {
-  const [search, setSearch] = React.useState("");
+ 
   const [data, setdata] = React.useState({});
   const editdata = (data) => setdata(data);
 
@@ -16,13 +16,7 @@ function Admin() {
 
     <>
 
-      {/* <input
-        type="text"
-        classname="form-control"
-        placeholder="Search user by name"
-        value={search}
-        onChange={({ target: { value } }) => setSearch(value)}
-      /> */}
+     
       <div className="container-fluid m-2">
         <div className="row">
           <h4>User</h4>
@@ -31,7 +25,7 @@ function Admin() {
 
       <div class="row ">
         <div class="col">
-          <Adminlist editdata={editdata} search={search} />
+          <Adminlist editdata={editdata} />
         </div>
         <div class="col">
           <Adminform data={data} />
