@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Navbar from "../Component/navbar";
 import './cs/product.css';
 import StripeCheckout from "react-stripe-checkout";
+import Card from "./card";
 
 function Details() {
 
@@ -39,6 +40,7 @@ function Details() {
                         {/* <button type="button" className="btn btn-default buy">Buy Now
                         </button> */}
                         <br/><br/>
+                       
                         <StripeCheckout 
                          name="TrendZone"
                          token={buy}
@@ -47,7 +49,8 @@ function Details() {
                     </div>
                 </div>
             </div>
-
+                   <h1>you may also like</h1>
+                      < Card />
         </>
 
     )
