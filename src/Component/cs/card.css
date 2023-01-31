@@ -1,22 +1,24 @@
+
+
 .products {
-    width: 220px;
-    margin-left: 45px;
-    margin-top: 5px;
-
-}
-.Card{
-    margin-top: 50px;
-    margin-bottom:30px;
-    
-    
+    width: 280px;
+    margin-left:12px;
+    background-color: rgb(194, 197, 194);
 }
 
-.card-title{
+.Card {
+    margin-top: 40px;
+    margin-bottom: 30px; 
+    text-decoration: none;
+    
+}
 
+.card-title {
     font-size: 16px;
+    
 }
 
-.title{
+.title {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
@@ -24,29 +26,25 @@
     background-color: rgb(3, 12, 29);
     margin-top: 5px;
     padding: 2px;
+
 }
 
 .btn-1 {
-    padding: 10px;
-    padding-right: 90px;
-    padding-left: 90px;
+   height: 45px;
+   width: 100%;
     color: #fff;
     background-color: rgb(33, 33, 65);
+    font-size: 20px;
+    border-radius: 5px;
 }
 
+.btn-1:hover{
+    background-color: rgb(26, 26, 99);
+}
 
-
- .price{
+.price {
     font-weight: bold;
+    text-decoration: none;
 }
 
-.Card:hover{
-    box-shadow: 0 0 50px rgba(0, 10, 10, 10.15);
 
-}
-
-.dropdown-item{
-    color: blue;
-    margin-left: 40px;
-    margin-right: 40px;
-}
