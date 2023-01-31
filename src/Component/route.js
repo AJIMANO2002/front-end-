@@ -12,8 +12,8 @@ function Routing() {
     return (
         <>                                                        
         <Route path="/home" component={Home} />
-        <Route path="/" component={Login}/>
-        <Route path="/register" component={Register}  exact/>                           
+        <Route path="/" component={Login} exact/>
+        <Route path="/register" component={Register}/>                           
         <Route path="/login" component={Login}/>               
         <Route path="/product" component={Product}/>
         <Route path="/user"  component={User}/>                
