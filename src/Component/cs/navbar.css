@@ -1,5 +1,13 @@
+a{
+  color: rgb(17, 17, 16);
+}
+
+
+
+
 .navbar {
   color: #fff;
+  background-color: rgb(187, 172, 172);
 }
 
 .icons {
@@ -16,11 +24,19 @@
 }
 
 #brand {
-  color: black;
+  color: rgb(15, 15, 15);
   margin-left: 35px;
+  cursor: pointer;
+  text-decoration: none;
   font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+#brand:hover {
+  background: -webkit-linear-gradient(45deg , #ff0202, rgb(255, 31, 31) , yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
 form {
   width: 60%;
   align-items: center;
