@@ -1,4 +1,3 @@
-
 import React from "react";
 import './css/register.css';
 import axios from 'axios';
@@ -13,12 +12,12 @@ function Register() {
     setuser({ ...user, [name]: value });
   }
   const handlesubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault() 
     try {
-      const url = "https://trendzone-backend.onrender.com/register";
+      const url = "http://localhost:5000/register";
       const res = await axios.post(url, user);
       console.log(res);
-      navigate("/login")
+      navigate.push("/login")
 
     } catch {
 
@@ -28,11 +27,11 @@ function Register() {
   return (
     <>
       <div class="wrapper">
-        <h2>Registration</h2>
+        <h2 >Registration</h2>
         <form onSubmit={handlesubmit}>
 
           <div class="input-box">
-            <label>Your Name<span className="text-danger">*</span></label>
+            <label style={{marginTop:"5px"}}>Your Name<span className="text-danger">*</span></label>
             <input type="text"
               name="name"
               onChange={handleChange}
@@ -41,7 +40,7 @@ function Register() {
           </div>
 
           <div class="input-box">
-          <label>E-mail<span className="text-danger">*</span></label>
+            <label style={{marginTop:"15px"}}>E-mail<span className="text-danger">*</span></label>
             <input type="text"
               name="email"
               onChange={handleChange}
@@ -50,7 +49,7 @@ function Register() {
           </div>
 
           <div class="input-box">
-          <label>Password<span className="text-danger">*</span></label>
+            <label  style={{marginTop:"25px"}}>Password<span className="text-danger">*</span></label>
             <input type="password"
               name="password"
               onChange={handleChange}
@@ -58,7 +57,7 @@ function Register() {
               required />
           </div>
           <div class="input-box">
-          <label>Confirm Password<span className="text-danger">*</span></label>
+            <label style={{marginTop:"35px"}}>Confirm Password<span className="text-danger">*</span></label>
             <input type="password"
               name="conformpassword"
               onChange={handleChange}
@@ -66,12 +65,13 @@ function Register() {
               required />
           </div>
           <div class="policy">
-            <input onChange={handleChange} type="checkbox" />
-            <h3>I accept all terms & condition</h3>
+            <input style={{marginTop:"55px"}} onChange={handleChange} type="checkbox" />
+            <h3 >I accept all terms & condition</h3>
           </div>
           <div class="input-box button">
             <input onChange={handleChange} type="Submit" value="Register Now" />
           </div>
+          <h2><a href="./login">sign in</a></h2>
 
         </form>
       </div>
