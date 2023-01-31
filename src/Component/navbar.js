@@ -1,21 +1,20 @@
 
-import React from "react";
+import  React from "react";
 import { FaUserAlt, FaCartPlus } from 'react-icons/fa';
 import "./cs/navbar.css";
 
 
+
 function Navbar() {
+
+ 
 
   return (
     <>
-
-
-
-
       <nav className="navbar ">
         <div className="container-fluid">
 
-          <h1 id="brand">TrendZone</h1>
+          <h1 id="brand"><a href="./home">TrendZone</a></h1>
 
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -23,7 +22,9 @@ function Navbar() {
           </form>
           <div className="icons">
             <div className="icon">
-              <FaUserAlt />
+              
+                <FaUserAlt />
+              
             </div>
 
             <div className="icon">
